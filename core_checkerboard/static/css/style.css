@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: peachpuff;
+    color: rebeccapurple;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+}
+
+.fila:nth-child(odd) .casilla:nth-child(even),
+.fila:nth-child(even) .casilla:nth-child(odd) {
+    background-color: black;
+}
+
+.casilla {
+    width: 50px;
+    height: 50px;
+}
+
+.roja {
+    background-color: red;
+}
+
+.negra {
+    background-color: black;
+}
+
+
